@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Instagram内製化プログラム">
+  <defs>
+    <linearGradient id="g" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#15887B"/><stop offset="55%" stop-color="#28AFA0"/><stop offset="100%" stop-color="#51E1D9"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)"/>
+  <rect x="15" y="34" width="8" height="15" rx="3" fill="#fff" opacity=".85"/>
+  <rect x="28" y="26" width="8" height="23" rx="3" fill="#fff" opacity=".92"/>
+  <rect x="41" y="16" width="8" height="33" rx="3" fill="#FEA400"/>
+</svg>

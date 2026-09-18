@@ -1,0 +1,29 @@
+# ================================================================
+# Netlify 設定ファイル
+# [レクチャー] リポジトリのルートに置くと、Netlifyが自動で読み込む。
+# 静的LPはビルド不要なので publish にルートを指定するだけでよい。
+# ================================================================
+[build]
+  publish = "."
+  command = ""
+
+# セキュリティとキャッシュのヘッダー設定
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# CSS/JS/画像は長期キャッシュ（更新時はファイル名を変えるのが定石）
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTMLは常に最新を取りに行かせる
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
