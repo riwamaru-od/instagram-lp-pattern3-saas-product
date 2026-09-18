@@ -7,6 +7,21 @@
 > このリポジトリは研修用の**お手本**です。
 > 各ファイルに `[レクチャー]` 付きコメントで設計意図を残しています。
 
+
+---
+
+## 公開URL
+
+**https://odlive-ig-lp-p3-saas-product.netlify.app**
+
+### 他のパターン
+
+- パターン1｜信頼構築型 B2B：[公開ページ](https://odlive-ig-lp-p1-trust-b2b.netlify.app) ／ [リポジトリ](https://github.com/riwamaru-od/instagram-lp-pattern1-trust-b2b)
+- パターン2｜ストーリー型ブランド：[公開ページ](https://odlive-ig-lp-p2-story-brand.netlify.app) ／ [リポジトリ](https://github.com/riwamaru-od/instagram-lp-pattern2-story-brand)
+
+全体のレクチャー資料（3パターン共通の制作手順・チェックリスト）は
+ローカルの `お手本/README.md` を参照してください。
+
 ---
 
 ## 1. 参考LPから何を受け継いだか
@@ -188,8 +203,8 @@ netlify deploy --prod --dir .
 
 ## 8. 本番公開前の差し替えチェックリスト
 
-- [ ] `https://example.com/` → 実際のドメイン（`canonical`・OGP・`robots.txt`）
-- [ ] `info@example.com` → 実際の問い合わせ先、またはフォームのURL
+- [ ] Netlifyの `*.netlify.app` → 本番ドメイン（`canonical`・OGP・`robots.txt`・`sitemap.xml`）
+- [ ] `info@example.com` → 実際の問い合わせ先、またはフォームのURL（**サンプルのまま残っています**）
 - [ ] CASE の3件 → 実際の導入事例（**掲載許諾を必ず取得すること**）
 - [ ] 成果数値（+312% / -45% など）→ **実データに差し替える。根拠のない数値は景品表示法に抵触する恐れがある**
 - [ ] FAQ構造化データ → 表示しているFAQと内容を一致させる

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- [レクチャー] 1ページのLPでもsitemapを置くと、クロールの起点が明示できる。
+     lastmod は更新のたびに書き換える。嘘の日付を書くと信頼を落とす。 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://odlive-ig-lp-p3-saas-product.netlify.app/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
